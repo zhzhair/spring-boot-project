@@ -1,0 +1,18 @@
+spring:
+  profiles.active: dev
+  http.encoding.force: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  servlet:
+    context-path: /main
+
+const:
+  reader:
+    dic-enable: true
+    censor-word-enable: true
+    censor-word:
+      dfa-enabled: true # dfa算法不适合中文过滤，在过滤英文敏感词时选用更佳

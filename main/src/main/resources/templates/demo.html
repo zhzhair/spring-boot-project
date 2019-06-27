@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<h1>Spring Boot - Demos</h1>
+<div>图片验证码和二维码</div>
+<div id="pic">
+    <div>
+        <img src="/main/imgcode/checkCode"/>
+        <img src="/main/imgcode/othersImg?content=laia,who pa who?" width="100px"/>
+        <img src="/main/imgcode/imgWithPic" width="100px"/>
+    </div>
+    <br/><br/>
+
+    <div>
+        <a href="/main/excel/output/0"><button>导出excel</button></a>
+        <br/>导入EXCEL
+        <form method="POST" action="/main/excel/upload/0" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

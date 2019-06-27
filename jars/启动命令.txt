@@ -1,0 +1,2 @@
+cd /d F:\495359612\jars
+java -jar main-1.0.0-APP.jar --port=80
