@@ -1,6 +1,5 @@
 package com.github.zhzhair.main;
 
-import io.netty.util.NettyRuntime;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,8 +15,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class MainApplication {
 
     public static void main(String[] args) {
-        System.setProperty("es.set.netty.runtime.available.processors", "false");
-        NettyRuntime.setAvailableProcessors(Runtime.getRuntime().availableProcessors());
         SpringApplication.run(MainApplication.class, args);
     }
 

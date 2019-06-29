@@ -16,8 +16,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.annotation.Resource;
 
-import static springfox.documentation.builders.RequestHandlerSelectors.basePackage;
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig implements BeanPostProcessor {
@@ -39,7 +37,7 @@ public class SwaggerConfig implements BeanPostProcessor {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("****后端接口文档")
+                .title("移动端app后端接口文档")
                 .description("如无特殊说明，所有接口均不需要在query中附带userId及token参数")
                 .termsOfServiceUrl("***")
                 .contact(new Contact("zhzhair","https://github.com/zhzhair","495359612@qq.com"))

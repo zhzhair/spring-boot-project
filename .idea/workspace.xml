@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spring-boot-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/启动命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/jars/启动命令.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/common/config/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/common/config/swagger/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/controller/DoctorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/domain/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/mapper/DoctorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/mapper/DoctorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/repository/DoctorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/service/DoctorGroupByService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/service/DoctorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/service/impl/DoctorGroupByServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/eslearn/service/impl/DoctorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/rabbitproducer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/rabbitproducer/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/rabbitproducer/service/impl/UserMQServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/github/zhzhair/main/rabbitproducer/service/impl/UserMQServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/resources/application-prod.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +28,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\localMaven\repo" />
+        <option name="mavenHome" value="D:/apache_maven_3.3.9" />
+        <option name="userSettingsFile" value="C:\Users\49535\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1NEZZUqmiYUraOH0ONloBXeQcbm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,6 +67,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,11 +94,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561648272100</updated>
-      <workItem from="1561648275288" duration="1110000" />
+      <workItem from="1561648275288" duration="1529000" />
+      <workItem from="1561695400064" duration="2294000" />
+      <workItem from="1561727630278" duration="5594000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1561675565631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561675565631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>

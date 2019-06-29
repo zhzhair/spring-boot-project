@@ -67,11 +67,6 @@ spring:
       auth: true
     #starttls.enable: true
     #starttls.required: true
-  data:
-    elasticsearch: #单机本地测试用的话不要配置节点信息
-      repositories:
-        enabled: true
-      cluster-nodes: 127.0.0.1:9300
 
 server:
   port: 80

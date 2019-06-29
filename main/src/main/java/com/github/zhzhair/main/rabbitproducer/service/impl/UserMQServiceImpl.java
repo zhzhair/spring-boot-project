@@ -7,6 +7,8 @@ import com.github.zhzhair.main.rabbitproducer.service.UserMQService;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
 import javax.annotation.Resource;
@@ -37,10 +39,13 @@ public class UserMQServiceImpl implements UserMQService {
         return null;
     }
 
+    @Transactional(isolation = Isolation.REPEATABLE_READ)
     @Override
     public UserMapperRequest register(UserMapperRequest userMapperRequest) {
         Integer userId = userMapper.findByMobile(userMapperRequest.getMobile());
-        if(userId != null){
+        Integer userId1 = userMapper.login(userMapperRequest.getUserName(), userMapperRequest.getPassword());
+        System.err.println(userId1);
+        if(userId != null || userId1 != null){
             return null;
         }
         userMapper.register(userMapperRequest);

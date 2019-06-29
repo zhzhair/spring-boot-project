@@ -37,7 +37,7 @@ public class UserController{
         BaseResponse<Object> baseResponse = new BaseResponse<>();
         String[] userNames = {"xiaoming","xiaohong","jingjing","xiaoqiang","xiaoli","tingting","xiaowang","laowang","zhaixinxin"};
         int rand = new Random().nextInt(userNames.length);
-        UserLoginInfo userLoginInfo = userService.login(userNames[rand], DigestUtils.md5DigestAsHex("123456".getBytes()), WebUtil.getRemoteAddr(req));
+        UserLoginInfo userLoginInfo = userService.login(userNames[rand], "123456", WebUtil.getRemoteAddr(req));
         if (userLoginInfo != null) {
             baseResponse.ok(userLoginInfo);
         } else {
