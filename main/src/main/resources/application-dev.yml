@@ -62,7 +62,7 @@ spring:
   mail:
     host: smtp.163.com    #发邮件配置
     username: zhzhair_java@163.com
-    password: 2018zhzh # year + name 这里是您自己给您邮箱申请的授权码，授权码不对或没有连接外网启动就会报错
+    password: "" # year + name 这里是您自己给您邮箱申请的授权码，授权码不对或没有连接外网启动就会报错
     properties.mail.smtp:
       auth: true
     #starttls.enable: true
