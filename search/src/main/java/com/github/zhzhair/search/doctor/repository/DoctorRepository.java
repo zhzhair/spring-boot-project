@@ -14,6 +14,6 @@ import java.util.List;
 public interface DoctorRepository extends ElasticsearchRepository<Doctor, Long> {
 
     Doctor findByDoctorId(Long doctorId);
-    List<Doctor> findByHospitalId(Long hospitalId);
+    List<Doctor> findByHospitalId(Long hospitalId, Pageable pageable);
     Page<Doctor> findByHospitalNameOrDoctorName(String hospitalName, String doctorName, Pageable pageable);
 }

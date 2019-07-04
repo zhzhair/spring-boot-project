@@ -10,4 +10,6 @@ public interface UserMapper {
     void register(UserMapperRequest userMapperRequest);
 
     Integer findByMobile(String mobile);
+
+    Integer findByUserName(String userName);
 }

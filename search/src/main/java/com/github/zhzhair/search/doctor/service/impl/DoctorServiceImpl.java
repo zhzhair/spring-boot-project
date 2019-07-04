@@ -66,7 +66,7 @@ public class DoctorServiceImpl implements DoctorService {
 
     @Override
     public List<Doctor> findByHospitalId(Long hospitalId) {
-        return doctorRepository.findByHospitalId(hospitalId);
+        return doctorRepository.findByHospitalId(hospitalId,pageable);
     }
 
     @Override

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.github.zhzhair.flowstatistic.dataview.mapper.AppRecordCountMapper">
+
+    <select id="getActiveCount" resultType="com.github.zhzhair.flowstatistic.dataview.dto.response.AppChannelCount">
+        select app_channel appChannel, count(distinct device_id) activeCount from ${tableName}
+        group by app_channel
+    </select>
+
+    <select id="getMonthActiveCountDays" resultType="java.lang.Integer">
+        select count(distinct device_id) from ${tableName}
+    </select>
+</mapper>

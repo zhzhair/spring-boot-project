@@ -1,0 +1,15 @@
+spring:
+  profiles.active: dev
+  http.encoding.force: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  servlet:
+    context-path: /flowstatistic
+
+const:
+  reader:
+    dic-enable: true

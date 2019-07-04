@@ -1,5 +1,6 @@
 package com.github.zhzhair.main.rabbitproducer.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.github.zhzhair.main.rabbitproducer.dto.request.UserMapperRequest;
 import com.github.zhzhair.main.rabbitproducer.mapper.UserMapper;
 import com.github.zhzhair.main.rabbitproducer.dto.response.UserLoginInfo;
@@ -42,19 +43,29 @@ public class UserMQServiceImpl implements UserMQService {
     @Transactional(isolation = Isolation.REPEATABLE_READ)
     @Override
     public UserMapperRequest register(UserMapperRequest userMapperRequest) {
-        Integer userId = userMapper.findByMobile(userMapperRequest.getMobile());
-        Integer userId1 = userMapper.login(userMapperRequest.getUserName(), userMapperRequest.getPassword());
-        System.err.println(userId1);
-        if(userId != null || userId1 != null){
-            return null;
-        }
         userMapper.register(userMapperRequest);
-        userId = userMapper.findByMobile(userMapperRequest.getMobile());
-        userMapperRequest.setUserId(userId);
+        Integer userId = userMapper.findByMobile(userMapperRequest.getMobile());
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("userId",userId);
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        userMapperRequest.setCreateTime(timestamp);
+        jsonObject.put("createTime",timestamp);
+        jsonObject.put("ip",userMapperRequest.getIp());
+        jsonObject.put("mobile",userMapperRequest.getMobile());
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());
-        rabbitTemplate.convertAndSend("DIRECT_EXCHANGE", "DIRECT_ROUTING_REGISTER", userMapperRequest, correlationData);
+        rabbitTemplate.convertAndSend("DIRECT_EXCHANGE", "DIRECT_ROUTING_REGISTER", jsonObject, correlationData);
         return userMapperRequest;
+    }
+
+    @Override
+    public int registerChannel(UserMapperRequest userMapperRequest) {
+        Integer userId = userMapper.findByMobile(userMapperRequest.getMobile());
+        Integer userId1 = userMapper.findByUserName(userMapperRequest.getUserName());
+        if(userId != null){
+            return 1;
+        }
+        if(userId1 != null){
+            return 2;
+        }
+        return 0;
     }
 }

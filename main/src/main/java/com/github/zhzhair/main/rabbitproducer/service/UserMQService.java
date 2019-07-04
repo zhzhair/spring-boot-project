@@ -8,4 +8,6 @@ public interface UserMQService {
     UserLoginInfo login(String userName, String password, String ip);
 
     UserMapperRequest register(UserMapperRequest userMapperRequest);
+
+    int registerChannel(UserMapperRequest userMapperRequest);
 }

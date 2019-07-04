@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.github.zhzhair.flowstatistic.datagenerate.mapper.AppRecordMapper">
+
+    <update id="truncateTable">
+        truncate table ${tableName}
+    </update>
+
+    <update id="dropTableIfExists">
+        drop table if exists ${tableName}
+    </update>
+
+    <insert id="insertStartFromNew">
+        insert into appstart_record_original
+        (`APP_CHANNEL`,`APP_VERSION`,`DEVICE_ID`,`DEVICE_HASH_MOD`,`RECORD_IN_TIME`)
+        select `APP_CHANNEL`,`APP_VERSION`,`DEVICE_ID`,`DEVICE_HASH_MOD`,`RECORD_IN_TIME`
+        from appnew_record_original
+    </insert>
+
+    <insert id="insertDataTables">
+        insert into ${tableToName}
+        (APP_CHANNEL,APP_VERSION,DEVICE_ID,RECORD_IN_TIME)
+        select APP_CHANNEL,APP_VERSION,DEVICE_ID,RECORD_IN_TIME
+        from ${tableFromName}
+        where DEVICE_HASH_MOD = ${rem}
+    </insert>
+
+    <insert id="insertStartDataOrigin">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into appnew_record_original
+        (APP_CHANNEL, APP_VERSION, DEVICE_ID, DEVICE_HASH_MOD, RECORD_IN_TIME)
+        values
+        <foreach collection="list" item="startEntity" index="index" separator=",">
+            (#{startEntity.appChannel},#{startEntity.appVersion},#{startEntity.deviceId},
+            #{startEntity.deviceHashMod},#{startEntity.recordInTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertRecordToday">
+        insert into app_record_${dateStr}
+        (`TRACE_ID`, `APP_CHANNEL`, `APP_VERSION`, `DEVICE_ID`, `IP`, `DEVICE_HASH_MOD`, `IF_START_RECORD`, `RECORD_IN_TIME`, `RECORD_OUT_TIME`)
+        values
+        (#{item.traceId},#{item.appChannel},#{item.appVersion},#{item.deviceId},#{item.ip},#{item.deviceHashMod},#{item.ifStartRecord},#{item.recordInTime},#{item.recordOutTime})
+    </insert>
+
+    <insert id="insertStartDataBefore">
+        insert into appstart_record_original
+        (APP_CHANNEL,APP_VERSION,DEVICE_ID,DEVICE_HASH_MOD,RECORD_IN_TIME)
+        select APP_CHANNEL,APP_VERSION,DEVICE_ID,DEVICE_HASH_MOD,#{dateDayStr}
+        from appnew_record_original where RECORD_IN_TIME = #{dateStr} limit #{size}
+    </insert>
+
+    <insert id="insertStartDataMonth">
+        insert into ${tableName}
+        (APP_CHANNEL,APP_VERSION,DEVICE_ID)
+        select distinct APP_CHANNEL,APP_VERSION,DEVICE_ID
+        from ${tableNameFrom}
+        where <![CDATA[ RECORD_IN_TIME >= #{dayBegin} and RECORD_IN_TIME <= #{dayEnd} ]]>
+    </insert>
+
+    <!--新增设备记录表须加上索引KEY `DEVICE_INDEX`(`DEVICE_ID`(5))-->
+    <update id="createAppStartTable">
+        CREATE TABLE IF NOT EXISTS ${tableName} (
+        `ID` int(11) NOT NULL AUTO_INCREMENT,
+        `APP_CHANNEL` varchar(16) NOT NULL,
+        `APP_VERSION` varchar(10) NOT NULL,
+        `DEVICE_ID` varchar(40) NOT NULL,
+        `RECORD_IN_TIME` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        PRIMARY KEY (`ID`),
+        KEY `IN_TIME_INDEX`(`RECORD_IN_TIME`)
+        ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+    </update>
+
+    <update id="createAppStartMonthTable">
+        CREATE TABLE IF NOT EXISTS ${tableName} (
+        `ID` int(11) NOT NULL AUTO_INCREMENT,
+        `APP_CHANNEL` varchar(16) NOT NULL,
+        `APP_VERSION` varchar(10) NOT NULL,
+        `DEVICE_ID` varchar(40) NOT NULL,
+        PRIMARY KEY (`ID`)
+        ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+    </update>
+
+    <update id="createAppStartDayTable">
+        CREATE TABLE IF NOT EXISTS app_record_${dateStr} (
+        `TRACE_ID` varchar(40) NOT NULL,
+        `APP_CHANNEL` varchar(16) NOT NULL,
+        `APP_VERSION` varchar(10) NOT NULL,
+        `DEVICE_ID` varchar(40) NOT NULL,
+        `IP` varchar(16) NOT NULL,
+        `DEVICE_HASH_MOD` varchar(4) NOT NULL,
+        `IF_START_RECORD` int(1) NOT NULL,
+        `RECORD_IN_TIME` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        `RECORD_OUT_TIME` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        PRIMARY KEY (`TRACE_ID`)
+        ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+    </update>
+</mapper>
