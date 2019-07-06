@@ -4,6 +4,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/flowstatistic/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/flowstatistic/target" />
       <excludeFolder url="file://$MODULE_DIR$/jars/propertiesreader/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/jars/propertiesreader/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/.idea" />

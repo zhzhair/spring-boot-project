@@ -25,20 +25,20 @@ public class AppRecordCountController {
     @Resource
     private AppRecordCountService viewService;
 
-    @RequestMapping(value = "/getActiveCount", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/getActiveCount", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "查询活跃设备数", notes = "查询活跃设备数")
-    public BaseResponse<Object> getActiveCount() {
+    public BaseResponse<Object> getActiveCount(String[] appVersions) {
         BaseResponse<Object> baseResponse = new BaseResponse<>();
-        List<Document> list = viewService.getActiveCount();
+        List<Document> list = viewService.getActiveCount(appVersions);
         baseResponse.ok(list);
         return baseResponse;
     }
 
-    @RequestMapping(value = "/getNewCount", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/getNewCount", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "查询新增设备数", notes = "查询新增设备数")
-    public BaseResponse<Object> getNewCount() {
+    public BaseResponse<Object> getNewCount(String[] appVersions) {
         BaseResponse<Object> baseResponse = new BaseResponse<>();
-        List<Document> list = viewService.getNewCount();
+        List<Document> list = viewService.getNewCount(appVersions);
         baseResponse.ok(list);
         return baseResponse;
     }

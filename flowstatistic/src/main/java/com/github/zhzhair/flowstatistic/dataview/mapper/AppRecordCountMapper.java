@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface AppRecordCountMapper {
 
-    List<AppChannelCount> getActiveCount(@Param("tableName") String tableName);
+    List<AppChannelCount> getActiveCount(@Param("tableName") String tableName, @Param("appVersions") String[] appVersions);
 
     Integer getMonthOrDayActiveCountDays(@Param("tableName") String tableName);
 }

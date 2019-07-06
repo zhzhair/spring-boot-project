@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface AppRecordCountService {
 
-    List<Document> getActiveCount();
+    List<Document> getActiveCount(String[] appVersions);
 
-    List<Document> getNewCount();
+    List<Document> getNewCount(String[] appVersions);
 
     List<AppChannelCount> getActiveCountDays();
 

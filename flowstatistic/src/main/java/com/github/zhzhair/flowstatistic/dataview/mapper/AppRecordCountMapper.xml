@@ -3,7 +3,16 @@
 <mapper namespace="com.github.zhzhair.flowstatistic.dataview.mapper.AppRecordCountMapper">
 
     <select id="getActiveCount" resultType="com.github.zhzhair.flowstatistic.dataview.dto.response.AppChannelCount">
-        select app_channel appChannel, count(distinct device_id) activeCount from ${tableName}
+        select app_channel appChannel, count(distinct device_id) activeCount
+        from ${tableName}
+        <where>
+            <if test="appVersions != null and appVersions.length > 0">
+                app_version in
+                <foreach collection="appVersions" item="item" index="index" open="(" separator="," close=")">
+                    #{item, jdbcType=VARCHAR}
+                </foreach>
+            </if>
+        </where>
         group by app_channel
     </select>
 

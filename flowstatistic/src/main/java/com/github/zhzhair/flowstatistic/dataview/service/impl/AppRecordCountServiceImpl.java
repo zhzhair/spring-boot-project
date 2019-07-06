@@ -17,7 +17,6 @@ import org.springframework.data.mongodb.core.aggregation.TypedAggregation;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.IntStream;
@@ -33,10 +32,10 @@ public class AppRecordCountServiceImpl implements AppRecordCountService {
     private MongoTemplate mongoTemplate;
 
     @Override
-    public List<Document> getActiveCount() {
+    public List<Document> getActiveCount(String[] appVersions) {
         mongoTemplate.dropCollection(AppChannelCountMongo.class);
         if (!mongoTemplate.collectionExists(AppChannelCountMongo.class))
-            IntStream.range(0, AppInfoDetail.tableCount).parallel().forEach(this::getActiveCountOne);
+            IntStream.range(0, AppInfoDetail.tableCount).parallel().forEach(i -> getActiveCountOne(i,appVersions));
         TypedAggregation<AppChannelCountMongo> aggregation = Aggregation.newAggregation(
                 AppChannelCountMongo.class,
                 project("appChannel", "activeCount"),//查询用到的字段
@@ -50,10 +49,10 @@ public class AppRecordCountServiceImpl implements AppRecordCountService {
     }
 
     @Override
-    public List<Document> getNewCount() {
+    public List<Document> getNewCount(String[] appVersions) {
         mongoTemplate.dropCollection(AppNewChannelCountMongo.class);
         if (!mongoTemplate.collectionExists(AppNewChannelCountMongo.class))
-            IntStream.range(0, AppInfoDetail.tableCount).parallel().forEach(this::getNewCountOne);
+            IntStream.range(0, AppInfoDetail.tableCount).parallel().forEach(i -> getNewCountOne(i,appVersions));
         TypedAggregation<AppNewChannelCountMongo> aggregation = Aggregation.newAggregation(
                 AppNewChannelCountMongo.class,
                 project("appChannel", "newCount"),//查询用到的字段
@@ -96,13 +95,13 @@ public class AppRecordCountServiceImpl implements AppRecordCountService {
         return list;
     }
 
-    private void getActiveCountOne(int i) {
-        List<AppChannelCount> list = viewMapper.getActiveCount("appstart_record_" + i);
+    private void getActiveCountOne(int i,String[] appVersions) {
+        List<AppChannelCount> list = viewMapper.getActiveCount("appstart_record_" + i, appVersions);
         mongoTemplate.insert(list, AppChannelCountMongo.class);
     }
 
-    private void getNewCountOne(int i) {
-        List<AppChannelCount> list = viewMapper.getActiveCount("appnew_record_" + i);
+    private void getNewCountOne(int i,String[] appVersions) {
+        List<AppChannelCount> list = viewMapper.getActiveCount("appnew_record_" + i, appVersions);
         mongoTemplate.insert(list, AppNewChannelCountMongo.class);
     }
 
