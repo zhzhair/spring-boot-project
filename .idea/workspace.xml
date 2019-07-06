@@ -1,66 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jars/operation-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/OperationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/annotations/AccessLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/annotations/LogForTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/annotations/NotAutoLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/base/dto/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/base/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/base/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/constant/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/constant/ConstantConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/druid/DruidConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/filter/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/mvc/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/mvc/interceptor/RateLimitInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/mvc/interceptor/RepeatSubmitInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/mvc/interceptor/RequestTimeConsumingInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/mvc/interceptor/TooMuchSubmitInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/rowmapper/RowMappercOonfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/config/swagger/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/constant/CountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/sql/FeedbackReplySql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/sql/FeedbackSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/util/GeneratorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/common/util/WebUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/controller/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/domain/FeedbackEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/domain/FeedbackReplyEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/dto/request/FeedbackInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/dto/request/FeedbackWhere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/dto/response/FeedbackDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/service/FeedbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/java/com/github/zhzhair/operation/feedback/service/impl/FeedbackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/ESAPI.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/data/dic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/main/resources/validation.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/test/java/com/github/zhzhair/operation/OperationApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/test/java/com/github/zhzhair/operation/jdbc/BasicDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operation/src/test/java/com/github/zhzhair/operation/jdbc/CodeGeneratorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/operation.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-boot-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/stepscount-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jars/stepscount-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/启动命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/jars/启动命令.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/swagger/SwaggerConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +83,7 @@
       <workItem from="1561860861226" duration="592000" />
       <workItem from="1562281242952" duration="503000" />
       <workItem from="1562380679083" duration="2731000" />
-      <workItem from="1562395086759" duration="2988000" />
+      <workItem from="1562395086759" duration="3150000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -214,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562393758483</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="运营平台">
+      <created>1562400061333</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562400061333</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +189,7 @@
     <MESSAGE value="4th commit" />
     <MESSAGE value="commit 4th" />
     <MESSAGE value="运动计步" />
-    <option name="LAST_COMMIT_MESSAGE" value="运动计步" />
+    <MESSAGE value="运营平台" />
+    <option name="LAST_COMMIT_MESSAGE" value="运营平台" />
   </component>
 </project>
