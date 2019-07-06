@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="" />
+    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/geo/documents/ChargePoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/geo/service/CaculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/geo/service/impl/CaculateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/step/service/CollectStepService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/step/service/impl/CollectStepServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/StepscountApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/stepscount/src/test/java/com/github/zhzhair/stepscount/StepscountApplicationTests.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/flowstatistic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stepscount" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,6 +93,8 @@
       <workItem from="1562380679083" duration="2731000" />
       <workItem from="1562395086759" duration="3150000" />
       <workItem from="1562400201090" duration="2172000" />
+      <workItem from="1562403303536" duration="137000" />
+      <workItem from="1562421901674" duration="1512000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -184,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562403235514</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="a">
+      <created>1562403365866</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562403365866</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +231,7 @@
     <MESSAGE value="运营平台" />
     <MESSAGE value="。。。" />
     <MESSAGE value="加上入参" />
-    <option name="LAST_COMMIT_MESSAGE" value="加上入参" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
