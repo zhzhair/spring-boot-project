@@ -68,17 +68,26 @@ public class AppRecordCountServiceImpl implements AppRecordCountService {
 
     @Override
     public List<AppChannelCount> getActiveCountDays() {
-        //从日表查
-        return new ArrayList<>();
+        List<AppChannelCount> list = new CopyOnWriteArrayList<>();
+        IntStream.rangeClosed(1,30).parallel().forEach(i -> {
+            String dayStr = DateUtil.getDateStr(i);
+            String tableName = "appday_record_" + dayStr.replace("-","");
+            Integer count = viewMapper.getMonthOrDayActiveCountDays(tableName);
+            AppChannelCount appChannelCount = new AppChannelCount();
+            appChannelCount.setActiveCount(count);
+            appChannelCount.setDayStr(dayStr);
+            list.add(appChannelCount);
+        });
+        return list;
     }
 
     @Override
     public List<AppChannelCount> getMonthActiveCountDays() {
         List<AppChannelCount> list = new CopyOnWriteArrayList<>();
-        IntStream.rangeClosed(2,31).parallel().forEach(i -> {
+        IntStream.rangeClosed(1,30).parallel().forEach(i -> {
             String dayStr = DateUtil.getDateStr(i);
             String tableName = "appmonth_record_" + dayStr.replace("-","");
-            Integer count = viewMapper.getMonthActiveCountDays(tableName);
+            Integer count = viewMapper.getMonthOrDayActiveCountDays(tableName);
             AppChannelCount appChannelCount = new AppChannelCount();
             appChannelCount.setActiveCount(count);
             appChannelCount.setDayStr(dayStr);

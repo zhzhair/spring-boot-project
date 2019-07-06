@@ -1,0 +1,4 @@
+一、在bin的同级目录新建文件夹取名data，执行命令mongod --dbpath data文件夹路径 启动mongo
+>>mongod --dbpath D:\database\mongodb\data
+二、配置环境变量：将bin目录的路径配置到path环境变量中，进入cmd终端，输入mongo就可以使用客户端命令；
+如果不配置环境变量，先进入bin目录，然后相同的步骤也可以进入mongo命令模式

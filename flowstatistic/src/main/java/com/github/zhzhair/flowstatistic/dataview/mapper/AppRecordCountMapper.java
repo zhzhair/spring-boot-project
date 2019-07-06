@@ -9,5 +9,5 @@ public interface AppRecordCountMapper {
 
     List<AppChannelCount> getActiveCount(@Param("tableName") String tableName);
 
-    Integer getMonthActiveCountDays(@Param("tableName") String tableName);
+    Integer getMonthOrDayActiveCountDays(@Param("tableName") String tableName);
 }

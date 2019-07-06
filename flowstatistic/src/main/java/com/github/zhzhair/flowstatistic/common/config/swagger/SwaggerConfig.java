@@ -37,7 +37,7 @@ public class SwaggerConfig implements BeanPostProcessor {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("流量统计平台端接口文档")
+                .title("流量统计平台后端接口文档")
                 .description("如无特殊说明，所有接口均不需要在query中附带userId及token参数")
                 .termsOfServiceUrl("***")
                 .contact(new Contact("zhzhair","https://github.com/zhzhair","495359612@qq.com"))

@@ -35,7 +35,7 @@ public class AppInfos {
      * 获取某一天的新增设备
      */
     public static List<StartRecordMapperRequest> getNewDevice(int n, int k, int tableCount){
-        int num = 200 + new Random().nextInt(2000);
+        int num = 160 + new Random().nextInt(1600);
         List<StartRecordMapperRequest> list = new ArrayList<>(num);
         for (int i = 0; i < num; i++) {
             String deviceId = UUID.randomUUID().toString().replace("-","");

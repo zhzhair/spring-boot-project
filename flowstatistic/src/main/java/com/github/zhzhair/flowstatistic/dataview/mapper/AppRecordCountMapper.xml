@@ -7,7 +7,7 @@
         group by app_channel
     </select>
 
-    <select id="getMonthActiveCountDays" resultType="java.lang.Integer">
+    <select id="getMonthOrDayActiveCountDays" resultType="java.lang.Integer">
         select count(distinct device_id) from ${tableName}
     </select>
 </mapper>

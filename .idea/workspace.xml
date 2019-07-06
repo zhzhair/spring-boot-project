@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/common/config/rabbitmq/comsumer/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/user/dao/UserActionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/user/dao/UserActionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowstatistic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowstatistic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/src/main/java/com/github/zhzhair/search/doctor/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/search/src/main/java/com/github/zhzhair/search/doctor/repository/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/src/main/java/com/github/zhzhair/search/doctor/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/search/src/main/java/com/github/zhzhair/search/doctor/service/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/search/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/search/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs-2019-06-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs-2019-07-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs-2019-07-02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs-2019-07-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs-2019-07-04.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs-2019-07-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs/access.127.0.0.1.100.2019-06-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs/access.127.0.0.1.100.2019-07-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs/access.127.0.0.1.100.2019-07-02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs/access.127.0.0.1.100.2019-07-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs/access.127.0.0.1.100.2019-07-04.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowstatistic/logs/access.127.0.0.1.100.2019-07-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/main-1.0.0-APP.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-windows安装运行.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +95,7 @@
       <workItem from="1561799896642" duration="379000" />
       <workItem from="1561852980377" duration="3240000" />
       <workItem from="1561860861226" duration="592000" />
+      <workItem from="1562281242952" duration="503000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -134,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561853585223</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="4th commit">
+      <created>1562281400860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562281400860</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +156,7 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="2th commit" />
     <MESSAGE value="3th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3th commit" />
+    <MESSAGE value="4th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
   </component>
 </project>

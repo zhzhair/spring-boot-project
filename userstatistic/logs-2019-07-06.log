@@ -1,0 +1,335 @@
+2019-07-06 07:51:20,524  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 19352 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 07:51:20,524  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 07:51:21,416  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 07:51:21,432  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 07:51:21,448  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 07:51:21,729  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$48e85911] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 07:51:22,073  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 07:51:22,073  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 07:51:22,088  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 07:51:22,088  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 07:51:22,213  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 07:51:22,213  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1610 ms
+2019-07-06 07:51:23,026  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 07:51:23,150  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 07:51:23,291  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 07:51:23,818  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:51:23,834  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 07:51:23,834  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:51:24,302  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 07:51:24,318  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 07:51:24,318  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 07:51:24,412  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 07:51:24,443  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#4168f3d9:0/SimpleConnection@105dc04d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54655]
+2019-07-06 07:51:24,490  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 07:51:24,521  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 07:51:24,521  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.512 seconds (JVM running for 5.352)
+2019-07-06 07:52:13,663  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 17232 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 07:52:13,678  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 07:52:14,538  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 07:52:14,538  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 07:52:14,569  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2019-07-06 07:52:14,803  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$329e1aad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 07:52:15,147  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 07:52:15,162  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 07:52:15,162  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 07:52:15,162  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 07:52:15,287  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 07:52:15,287  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1546 ms
+2019-07-06 07:52:16,037  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 07:52:16,147  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 07:52:16,240  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 07:52:16,693  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:52:16,693  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 07:52:16,693  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:52:17,115  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 07:52:17,131  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 07:52:17,131  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 07:52:17,224  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 07:52:17,256  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#2c1d57bc:0/SimpleConnection@3b30eec5 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54674]
+2019-07-06 07:52:17,303  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 07:52:17,318  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 07:52:17,334  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.109 seconds (JVM running for 5.139)
+2019-07-06 07:52:48,656  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 10612 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 07:52:48,656  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 07:52:49,520  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 07:52:49,520  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 07:52:49,551  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 07:52:49,801  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac721e87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 07:52:50,129  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 07:52:50,145  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 07:52:50,145  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 07:52:50,145  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 07:52:50,270  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 07:52:50,270  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1551 ms
+2019-07-06 07:52:51,019  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 07:52:51,113  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 07:52:51,222  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 07:52:51,660  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:52:51,675  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 07:52:51,675  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:52:52,097  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 07:52:52,113  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 07:52:52,128  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 07:52:52,222  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 07:52:52,347  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#a2b54e3:0/SimpleConnection@31f7eb8 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54695]
+2019-07-06 07:52:52,394  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 07:52:52,425  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 07:52:52,425  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.238 seconds (JVM running for 5.348)
+2019-07-06 07:53:20,688  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 16516 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 07:53:20,688  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 07:53:21,563  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 07:53:21,578  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 07:53:21,594  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 07:53:21,860  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8020b2a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 07:53:22,172  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 07:53:22,188  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 07:53:22,188  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 07:53:22,188  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 07:53:22,328  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 07:53:22,328  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1562 ms
+2019-07-06 07:53:23,062  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 07:53:23,172  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 07:53:23,266  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 07:53:23,781  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:53:23,781  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 07:53:23,781  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:53:24,172  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 07:53:24,187  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 07:53:24,203  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 07:53:24,281  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 07:53:24,297  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#756b2d90:0/SimpleConnection@61dd1c3d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54721]
+2019-07-06 07:53:24,359  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 07:53:24,375  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 07:53:24,375  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.14 seconds (JVM running for 5.463)
+2019-07-06 07:55:16,720  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 20632 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 07:55:16,720  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 07:55:17,641  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 07:55:17,641  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 07:55:17,673  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 07:55:17,923  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d8ecaeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 07:55:18,235  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 07:55:18,251  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 07:55:18,251  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 07:55:18,251  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 07:55:18,391  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 07:55:18,391  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1624 ms
+2019-07-06 07:55:19,131  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 07:55:19,240  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 07:55:19,334  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 07:55:19,834  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:55:19,834  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 07:55:19,834  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 07:55:20,224  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 07:55:20,240  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 07:55:20,240  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 07:55:20,334  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 07:55:20,349  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#26e0d39c:0/SimpleConnection@4cfc0c48 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54754]
+2019-07-06 07:55:20,396  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 07:55:20,427  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 07:55:20,427  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.16 seconds (JVM running for 5.004)
+2019-07-06 08:05:12,802  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 17856 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 08:05:12,802  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 08:05:13,646  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 08:05:13,646  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 08:05:13,661  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-07-06 08:05:13,927  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$600ba780] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 08:05:14,255  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 120 (http)
+2019-07-06 08:05:14,255  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-120"]
+2019-07-06 08:05:14,271  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 08:05:14,271  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 08:05:14,396  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 08:05:14,396  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1516 ms
+2019-07-06 08:05:15,178  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 08:05:15,287  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 08:05:15,381  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 08:05:15,881  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:05:15,881  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 08:05:15,881  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:05:16,303  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 08:05:16,303  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 08:05:16,318  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 08:05:16,397  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 08:05:16,428  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#de579ff:0/SimpleConnection@dae5e0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55023]
+2019-07-06 08:05:16,475  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-120"]
+2019-07-06 08:05:16,506  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 120 (http) with context path '/useraction'
+2019-07-06 08:05:16,506  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.141 seconds (JVM running for 4.975)
+2019-07-06 08:05:30,511  INFO - [http-nio-120-exec-1  ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-06 08:05:30,511  INFO - [http-nio-120-exec-1  ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-06 08:05:30,521  INFO - [http-nio-120-exec-1  ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 9 ms
+2019-07-06 08:05:30,625  INFO - [http-nio-120-exec-1  ] io.lettuce.core.EpollProvider                      : Starting without optional epoll library
+2019-07-06 08:05:30,626  INFO - [http-nio-120-exec-1  ] io.lettuce.core.KqueueProvider                     : Starting without optional kqueue library
+2019-07-06 08:05:31,064  INFO - [http-nio-120-exec-1  ] c.g.z.u.user.controller.UserActionController       : 前端调用方法开始----truncateTables---->：#{"URL地址":/userAction/truncateTables, "HTTP方法":GET，参数：}
+2019-07-06 08:05:31,492  INFO - [http-nio-120-exec-1  ] c.g.z.u.user.controller.UserActionController       : 前端调用方法结束----truncateTables---->：返回值: {"code":0,"msg":"success"}
+2019-07-06 08:05:31,543  INFO - [http-nio-120-exec-1  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /userAction/truncateTables                                  1005ms
+2019-07-06 08:05:51,876  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 6784 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 08:05:51,876  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 08:05:52,813  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 08:05:52,813  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 08:05:52,829  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 08:05:53,094  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c56e40e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 08:05:53,407  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 08:05:53,422  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 08:05:53,422  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 08:05:53,438  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 08:05:53,563  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 08:05:53,563  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1609 ms
+2019-07-06 08:05:54,297  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 08:05:54,391  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 08:05:54,500  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 08:05:55,000  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:05:55,000  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 08:05:55,000  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:05:55,439  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 08:05:55,454  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 08:05:55,470  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 08:05:55,548  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 08:05:55,579  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#706f6d26:0/SimpleConnection@528e5e38 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55061]
+2019-07-06 08:05:55,626  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 08:05:55,657  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 08:05:55,657  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.281 seconds (JVM running for 5.169)
+2019-07-06 08:06:44,581  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 1768 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 08:06:44,581  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 08:06:45,534  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 08:06:45,550  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 08:06:45,565  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-07-06 08:06:45,847  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe313ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 08:06:46,175  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 110 (http)
+2019-07-06 08:06:46,175  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-110"]
+2019-07-06 08:06:46,190  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 08:06:46,190  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 08:06:46,331  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 08:06:46,331  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1672 ms
+2019-07-06 08:06:47,187  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 08:06:47,325  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 08:06:47,428  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 08:06:47,967  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:06:47,967  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 08:06:47,967  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:06:48,357  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 08:06:48,357  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 08:06:48,373  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 08:06:48,451  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 08:06:48,482  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#1c98b4eb:0/SimpleConnection@7858d31d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55111]
+2019-07-06 08:06:48,529  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-110"]
+2019-07-06 08:06:48,560  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 110 (http) with context path '/useraction'
+2019-07-06 08:06:48,560  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.479 seconds (JVM running for 5.371)
+2019-07-06 08:07:13,760  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 12892 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 08:07:13,760  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 08:07:14,678  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 08:07:14,693  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 08:07:14,709  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 08:07:15,088  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4eecc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 08:07:15,483  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 120 (http)
+2019-07-06 08:07:15,495  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-120"]
+2019-07-06 08:07:15,502  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 08:07:15,503  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 08:07:15,646  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 08:07:15,646  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1807 ms
+2019-07-06 08:07:16,395  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 08:07:16,504  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 08:07:16,598  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 08:07:17,067  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:07:17,082  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 08:07:17,082  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:07:17,488  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 08:07:17,504  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 08:07:17,520  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 08:07:17,598  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 08:07:17,629  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#349c4d1c:0/SimpleConnection@59a94d0f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55158]
+2019-07-06 08:07:17,676  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-120"]
+2019-07-06 08:07:17,707  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 120 (http) with context path '/useraction'
+2019-07-06 08:07:17,707  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.431 seconds (JVM running for 5.346)
+2019-07-06 08:07:18,943  INFO - [http-nio-120-exec-1  ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-06 08:07:18,944  INFO - [http-nio-120-exec-1  ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-06 08:07:18,955  INFO - [http-nio-120-exec-1  ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 11 ms
+2019-07-06 08:07:19,075  INFO - [http-nio-120-exec-2  ] io.lettuce.core.EpollProvider                      : Starting without optional epoll library
+2019-07-06 08:07:19,076  INFO - [http-nio-120-exec-2  ] io.lettuce.core.KqueueProvider                     : Starting without optional kqueue library
+2019-07-06 08:07:19,584  INFO - [http-nio-120-exec-5  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/css/screen.css                577ms
+2019-07-06 08:07:19,584  INFO - [http-nio-120-exec-4  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/object-assign-pollyfill.js577ms
+2019-07-06 08:07:19,584  INFO - [http-nio-120-exec-3  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/css/reset.css                 578ms
+2019-07-06 08:07:19,584  INFO - [http-nio-120-exec-7  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/jquery.slideto.min.js     577ms
+2019-07-06 08:07:19,584  INFO - [http-nio-120-exec-6  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/jquery-1.8.0.min.js       577ms
+2019-07-06 08:07:19,584  INFO - [http-nio-120-exec-2  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/css/typography.css            588ms
+2019-07-06 08:07:19,601  INFO - [http-nio-120-exec-3  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/jquery.ba-bbq.min.js      15ms
+2019-07-06 08:07:19,601  INFO - [http-nio-120-exec-2  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/jquery.wiggle.min.js      15ms
+2019-07-06 08:07:19,603  INFO - [http-nio-120-exec-5  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/backbone-min.js           17ms
+2019-07-06 08:07:19,604  INFO - [http-nio-120-exec-7  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/lodash.min.js             18ms
+2019-07-06 08:07:19,611  INFO - [http-nio-120-exec-4  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/handlebars-4.0.5.js       25ms
+2019-07-06 08:07:19,623  INFO - [http-nio-120-exec-6  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/swagger-ui.min.js             37ms
+2019-07-06 08:07:19,623  INFO - [http-nio-120-exec-8  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack_extended.js17ms
+2019-07-06 08:07:19,623  INFO - [http-nio-120-exec-2  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack.js   17ms
+2019-07-06 08:07:19,625  INFO - [http-nio-120-exec-10 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/marked.js                 12ms
+2019-07-06 08:07:19,628  INFO - [http-nio-120-exec-9  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/jsoneditor.min.js         15ms
+2019-07-06 08:07:19,634  INFO - [http-nio-120-exec-12 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/lib/swagger-oauth.js          15ms
+2019-07-06 08:07:19,639  INFO - [http-nio-120-exec-8  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/springfox.js                  9ms
+2019-07-06 08:07:19,641  INFO - [http-nio-120-exec-11 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/images/logo_small.png         7ms
+2019-07-06 08:07:19,641  INFO - [http-nio-120-exec-13 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/css/print.css                 7ms
+2019-07-06 08:07:19,803  INFO - [http-nio-120-exec-14 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/fonts/DroidSans-Bold.ttf      13ms
+2019-07-06 08:07:19,804  INFO - [http-nio-120-exec-15 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/fonts/DroidSans.ttf           14ms
+2019-07-06 08:07:19,829  INFO - [http-nio-120-exec-17 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/images/favicon-32x32.png      11ms
+2019-07-06 08:07:19,839  INFO - [http-nio-120-exec-18 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/images/favicon-16x16.png      6ms
+2019-07-06 08:07:25,762  INFO - [http-nio-120-exec-22 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /webjars/springfox-swagger-ui/images/throbber.gif           5ms
+2019-07-06 08:07:27,618  INFO - [http-nio-120-exec-23 ] c.g.z.u.user.controller.UserActionController       : 前端调用方法开始----truncateTables---->：#{"URL地址":/userAction/truncateTables, "HTTP方法":GET，参数：}
+2019-07-06 08:07:28,034  INFO - [http-nio-120-exec-23 ] c.g.z.u.user.controller.UserActionController       : 前端调用方法结束----truncateTables---->：返回值: {"code":0,"msg":"success"}
+2019-07-06 08:07:28,039  INFO - [http-nio-120-exec-23 ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /userAction/truncateTables                                  430ms
+2019-07-06 08:25:35,322  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 18512 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 08:25:35,337  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 08:25:36,240  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 08:25:36,240  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 08:25:36,256  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 08:25:36,506  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b40106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 08:25:36,849  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 120 (http)
+2019-07-06 08:25:36,865  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-120"]
+2019-07-06 08:25:36,865  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 08:25:36,865  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 08:25:36,990  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 08:25:36,990  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1590 ms
+2019-07-06 08:25:37,755  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 08:25:37,865  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 08:25:37,959  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 08:25:38,443  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:25:38,443  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 08:25:38,443  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:25:38,849  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 08:25:38,865  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 08:25:38,865  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 08:25:38,958  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 08:25:38,974  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#3b11620a:0/SimpleConnection@425b5fe2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55693]
+2019-07-06 08:25:39,036  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-120"]
+2019-07-06 08:25:39,052  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 120 (http) with context path '/useraction'
+2019-07-06 08:25:39,052  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.199 seconds (JVM running for 5.091)
+2019-07-06 08:43:45,176  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Starting UseractionApplication on LAPTOP-AJOD9Q7O with PID 21604 (F:\spring-boot-project\userstatistic\target\classes started by zhzhair in F:\spring-boot-project\userstatistic)
+2019-07-06 08:43:45,192  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : The following profiles are active: dev
+2019-07-06 08:43:46,053  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-06 08:43:46,053  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-06 08:43:46,085  INFO - [main                 ] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-06 08:43:46,335  INFO - [main                 ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac4dad47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-06 08:43:46,663  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 120 (http)
+2019-07-06 08:43:46,678  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-120"]
+2019-07-06 08:43:46,694  INFO - [main                 ] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2019-07-06 08:43:46,694  INFO - [main                 ] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-06 08:43:46,819  INFO - [main                 ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring embedded WebApplicationContext
+2019-07-06 08:43:46,819  INFO - [main                 ] org.springframework.web.context.ContextLoader      : Root WebApplicationContext: initialization completed in 1565 ms
+2019-07-06 08:43:47,583  INFO - [main                 ] c.g.z.u.common.config.constant.ConstantConfig      : 初始化常量成功
+2019-07-06 08:43:47,691  INFO - [main                 ] c.a.d.s.b.a.DruidDataSourceAutoConfigure           : Init DruidDataSource
+2019-07-06 08:43:47,784  INFO - [main                 ] com.alibaba.druid.pool.DruidDataSource             : {dataSource-1} inited
+2019-07-06 08:43:48,284  INFO - [main                 ] c.g.zhzhair.propreader.service.DictionaryReader    : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:43:48,284  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 只有单个json配置文件建议注入对象：DictionaryBean
+2019-07-06 08:43:48,284  INFO - [main                 ] c.g.z.propreader.service.MultiDictionaryReader     : 初始化字典数据 ===== 文件路径: data/dic.json
+2019-07-06 08:43:48,690  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-06 08:43:48,706  INFO - [main                 ] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-07-06 08:43:48,722  INFO - [main                 ] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-07-06 08:43:48,800  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Attempting to connect to: [127.0.0.1:5672]
+2019-07-06 08:43:48,815  INFO - [main                 ] o.s.a.rabbit.connection.CachingConnectionFactory   : Created new connection: rabbitConnectionFactory#284bdeed:0/SimpleConnection@2b5f8e61 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55973]
+2019-07-06 08:43:48,878  INFO - [main                 ] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-120"]
+2019-07-06 08:43:48,893  INFO - [main                 ] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 120 (http) with context path '/useraction'
+2019-07-06 08:43:48,909  INFO - [main                 ] c.github.zhzhair.useraction.UseractionApplication  : Started UseractionApplication in 4.186 seconds (JVM running for 5.34)
+2019-07-06 08:44:34,866  INFO - [http-nio-120-exec-1  ] o.a.c.c.C.[Tomcat].[localhost].[/useraction]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-06 08:44:34,866  INFO - [http-nio-120-exec-1  ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-06 08:44:34,875  INFO - [http-nio-120-exec-1  ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 9 ms
+2019-07-06 08:44:34,975  INFO - [http-nio-120-exec-1  ] io.lettuce.core.EpollProvider                      : Starting without optional epoll library
+2019-07-06 08:44:34,976  INFO - [http-nio-120-exec-1  ] io.lettuce.core.KqueueProvider                     : Starting without optional kqueue library
+2019-07-06 08:44:35,561  INFO - [http-nio-120-exec-1  ] c.g.z.u.user.controller.UserActionController       : 前端调用方法开始----truncateTables---->：#{"URL地址":/userAction/truncateTables, "HTTP方法":GET，参数：}
+2019-07-06 08:44:35,619  INFO - [http-nio-120-exec-1  ] c.g.z.u.user.controller.UserActionController       : 前端调用方法结束----truncateTables---->：返回值: {"code":0,"msg":"success"}
+2019-07-06 08:44:35,659  INFO - [http-nio-120-exec-1  ] c.g.z.u.c.c.m.i.RequestTimeConsumingInterceptor    : /userAction/truncateTables                                  771ms

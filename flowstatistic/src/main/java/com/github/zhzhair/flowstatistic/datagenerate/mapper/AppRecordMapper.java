@@ -19,13 +19,17 @@ public interface AppRecordMapper {
 
     void createAppStartTable(@Param("tableName") String tableName);
 
-    void createAppStartMonthTable(@Param("tableName") String tableName);
+    void createAppNewTable(@Param("tableName") String tableName);
+
+    void createAppStartMonthOrDayTable(@Param("tableName") String tableName);
 
     void createAppStartDayTable(@Param("dateStr") String dateStr);
 
     void insertRecordToday(@Param("item") StartRecordMapperRequest startRecordMapperRequest, @Param("dateStr") String dateStr);
 
-    void insertDataTables(@Param("tableFromName") String tableFromName,@Param("tableToName") String tableToName, @Param("rem") String rem);
+    void insertDataTables(@Param("tableFromName") String tableFromName,@Param("tableToName") String tableToName, @Param("rem") Integer rem);
 
     void insertStartDataMonth(@Param("tableNameFrom") String tableNameFrom, @Param("tableName") String tableName, @Param("dayBegin") String dayBegin, @Param("dayEnd") String dayEnd);
+
+    void insertStartDataDay(@Param("tableNameFrom") String tableNameFrom, @Param("tableName") String tableName, @Param("dayStr") String dayStr);
 }

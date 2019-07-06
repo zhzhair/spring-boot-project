@@ -62,6 +62,15 @@ public class AppDataCollectController {
         return baseResponse;
     }
 
+    @RequestMapping(value = "/insertDataTables", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "添加分表数据", notes = "添加分表数据")
+    public BaseResponse<Object> insertDataTables() {
+        BaseResponse<Object> baseResponse = new BaseResponse<>();
+        testService.insertDataTables();
+        baseResponse.ok();
+        return baseResponse;
+    }
+
     @RequestMapping(value = "/createMonthTables", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "新建月活记录表", notes = "新建月活记录表")
     public BaseResponse<Object> createMonthTables() {
@@ -85,6 +94,32 @@ public class AppDataCollectController {
     public BaseResponse<Object> insertMonthRecord() {
         BaseResponse<Object> baseResponse = new BaseResponse<>();
         testService.insertMonthRecord();
+        baseResponse.ok();
+        return baseResponse;
+    }
+    @RequestMapping(value = "/createAppStartDayTable", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "新建日活记录表", notes = "新建日活记录表")
+    public BaseResponse<Object> createAppStartDayTable() {
+        BaseResponse<Object> baseResponse = new BaseResponse<>();
+        testService.createAppStartDayTable();//实际上是由定时任务创建
+        baseResponse.ok();
+        return baseResponse;
+    }
+
+    @RequestMapping(value = "/dropAppStartDayTable", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "删除日活记录表", notes = "删除日活记录表")
+    public BaseResponse<Object> dropAppStartDayTable() {
+        BaseResponse<Object> baseResponse = new BaseResponse<>();
+        testService.dropAppStartDayTable();
+        baseResponse.ok();
+        return baseResponse;
+    }
+
+    @RequestMapping(value = "/insertDayRecord", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "插入日活记录", notes = "插入日活记录")
+    public BaseResponse<Object> insertDayRecord() {
+        BaseResponse<Object> baseResponse = new BaseResponse<>();
+        testService.insertDayRecord();
         baseResponse.ok();
         return baseResponse;
     }

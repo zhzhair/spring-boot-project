@@ -9,5 +9,5 @@ public interface AppInfoDetail {
             "huawei", "appStore", "appStore", "appStore", "appStore", "appStore", "appStore",
             "samsung", "oppo", "mezu", "htc", "vivo", "vivo", "vivo", "360yingyong", "360yingyong",
             "baiduyingyong", "baiduyingyong", "baiduyingyong", "wandoujia", "iTools"};
-    int tableCount = 128;
+    int tableCount = 64;
 }

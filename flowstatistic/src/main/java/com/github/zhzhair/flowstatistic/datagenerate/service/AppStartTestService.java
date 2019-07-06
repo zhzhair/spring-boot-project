@@ -9,6 +9,8 @@ public interface AppStartTestService {
 
     void insertDataOrigin();
 
+    void insertDataTables();
+
     void createTables();
 
     void dropTables();
@@ -24,5 +26,11 @@ public interface AppStartTestService {
     void dropAppStartMonthTable();
 
     void insertMonthRecord();
+
+    void createAppStartDayTable();
+
+    void dropAppStartDayTable();
+
+    void insertDayRecord();
 
 }

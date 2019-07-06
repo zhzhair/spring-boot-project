@@ -22,7 +22,7 @@
         (APP_CHANNEL,APP_VERSION,DEVICE_ID,RECORD_IN_TIME)
         select APP_CHANNEL,APP_VERSION,DEVICE_ID,RECORD_IN_TIME
         from ${tableFromName}
-        where DEVICE_HASH_MOD = ${rem}
+        where DEVICE_HASH_MOD = #{rem}
     </insert>
 
     <insert id="insertStartDataOrigin">
@@ -60,7 +60,14 @@
         where <![CDATA[ RECORD_IN_TIME >= #{dayBegin} and RECORD_IN_TIME <= #{dayEnd} ]]>
     </insert>
 
-    <!--新增设备记录表须加上索引KEY `DEVICE_INDEX`(`DEVICE_ID`(5))-->
+    <insert id="insertStartDataDay">
+        insert into ${tableName}
+        (APP_CHANNEL,APP_VERSION,DEVICE_ID)
+        select distinct APP_CHANNEL,APP_VERSION,DEVICE_ID
+        from ${tableNameFrom}
+        where RECORD_IN_TIME = #{dayStr}
+    </insert>
+
     <update id="createAppStartTable">
         CREATE TABLE IF NOT EXISTS ${tableName} (
         `ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -73,7 +80,20 @@
         ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
     </update>
 
-    <update id="createAppStartMonthTable">
+    <update id="createAppNewTable">
+        CREATE TABLE IF NOT EXISTS ${tableName} (
+        `ID` int(11) NOT NULL AUTO_INCREMENT,
+        `APP_CHANNEL` varchar(16) NOT NULL,
+        `APP_VERSION` varchar(10) NOT NULL,
+        `DEVICE_ID` varchar(40) NOT NULL,
+        `RECORD_IN_TIME` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        PRIMARY KEY (`ID`),
+        KEY `IN_TIME_INDEX`(`RECORD_IN_TIME`),
+        KEY `DEVICE_INDEX`(`DEVICE_ID`(5))
+        ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+    </update>
+
+    <update id="createAppStartMonthOrDayTable">
         CREATE TABLE IF NOT EXISTS ${tableName} (
         `ID` int(11) NOT NULL AUTO_INCREMENT,
         `APP_CHANNEL` varchar(16) NOT NULL,
