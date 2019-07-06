@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="" />
+    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/annotations/AccessLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/annotations/LogForTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/annotations/NotAutoLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/base/dto/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/base/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/base/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/constant/ConstantConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/druid/DruidConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/mvc/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/mvc/interceptor/RateLimitInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/mvc/interceptor/RepeatSubmitInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/mvc/interceptor/RequestTimeConsumingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/mvc/interceptor/TooMuchSubmitInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/redis/RedisTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/config/swagger/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/constant/CountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/constant/TableMetaInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/util/GeneratorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/common/util/WebUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/controller/StepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/documents/StepsTop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/dto/response/StepsRankAllResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/mapper/CommonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/mapper/CommonMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/service/StepService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/service/impl/StepServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/java/com/github/zhzhair/stepscount/step/task/StepTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/resources/ESAPI.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stepscount/src/main/resources/validation.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-boot-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +123,7 @@
       <workItem from="1561852980377" duration="3240000" />
       <workItem from="1561860861226" duration="592000" />
       <workItem from="1562281242952" duration="503000" />
-      <workItem from="1562380679083" duration="897000" />
+      <workItem from="1562380679083" duration="1972000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -140,11 +181,29 @@
       <option name="project" value="LOCAL" />
       <updated>1562380731344</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 4th">
+      <created>1562383471834</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562383471834</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
