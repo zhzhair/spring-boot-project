@@ -1,0 +1,11 @@
+spring:
+  profiles.active: dev
+  http.encoding.force: true
+
+server:
+  servlet:
+    context-path: /operation
+
+const:
+  reader:
+    dic-enable: true

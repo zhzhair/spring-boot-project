@@ -11,3 +11,4 @@ java -jar F:\spring-boot-project\jars\search-0.0.1-SNAPSHOT.jar --server.port=90
 java -jar F:\spring-boot-project\jars\flowstatistic-0.0.1-SNAPSHOT.jar --server.port=100
 java -jar F:\spring-boot-project\jars\useraction-0.0.1-SNAPSHOT.jar --server.port=120
 java -jar F:\spring-boot-project\jars\stepscount-0.0.1-SNAPSHOT.jar --server.port=130
+java -jar F:\spring-boot-project\jars\operation-0.0.1-SNAPSHOT.jar --server.port=140

@@ -7,6 +7,9 @@
       <excludeFolder url="file://$MODULE_DIR$/jars/propertiesreader/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/jars/propertiesreader/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/operation/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/operation/.idea/libraries" />
+      <excludeFolder url="file://$MODULE_DIR$/operation/target" />
       <excludeFolder url="file://$MODULE_DIR$/search/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/stepscount/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/stepscount/.idea/libraries" />
