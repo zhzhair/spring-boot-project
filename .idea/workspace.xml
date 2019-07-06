@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-boot-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/controller/AppRecordCountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/controller/AppRecordCountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/mapper/AppRecordCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/mapper/AppRecordCountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/mapper/AppRecordCountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/mapper/AppRecordCountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/service/AppRecordCountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/service/AppRecordCountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/service/impl/AppRecordCountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowstatistic/src/main/java/com/github/zhzhair/flowstatistic/dataview/service/impl/AppRecordCountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/flowstatistic-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jars/flowstatistic-0.0.1-SNAPSHOT.jar" afterDir="false" />
-    </list>
+    <list default="true" id="a2ae9dea-ec13-48ad-b3c2-75296c52a0a1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +84,7 @@
       <workItem from="1562281242952" duration="503000" />
       <workItem from="1562380679083" duration="2731000" />
       <workItem from="1562395086759" duration="3150000" />
-      <workItem from="1562400201090" duration="2096000" />
+      <workItem from="1562400201090" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -186,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562400806465</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="加上入参">
+      <created>1562403235514</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562403235514</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +213,7 @@
     <MESSAGE value="运动计步" />
     <MESSAGE value="运营平台" />
     <MESSAGE value="。。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="。。。" />
+    <MESSAGE value="加上入参" />
+    <option name="LAST_COMMIT_MESSAGE" value="加上入参" />
   </component>
 </project>
