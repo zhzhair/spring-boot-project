@@ -92,6 +92,7 @@
       <workItem from="1562421901674" duration="1579000" />
       <workItem from="1562497687682" duration="103000" />
       <workItem from="1563370905283" duration="85000" />
+      <workItem from="1563371007523" duration="868000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -205,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562425165780</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="a">
+      <created>1563371175293</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1563371175293</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,8 +243,8 @@
     <MESSAGE value="运营平台" />
     <MESSAGE value="。。。" />
     <MESSAGE value="加上入参" />
-    <MESSAGE value="a" />
     <MESSAGE value="加mongo的其他测试例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="加mongo的其他测试例子" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
