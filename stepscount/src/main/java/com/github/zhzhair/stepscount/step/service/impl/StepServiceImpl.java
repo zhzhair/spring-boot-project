@@ -45,8 +45,8 @@ public class StepServiceImpl implements StepService {
     @Override
     public void createTables() {
         IntStream.range(0, TableMetaInfo.tableCount).parallel().forEach(i-> {
-            commonMapper.truncateTableIfExists(prefix + i);
             commonMapper.createTable(prefix + i);
+            commonMapper.truncateTable(prefix + i);
         });
     }
 

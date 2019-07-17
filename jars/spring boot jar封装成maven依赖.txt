@@ -1,9 +1,0 @@
-﻿进入maven执行打包命令的路径：
-cd /d D:\apache_maven_3.3.9\bin
-
-自动打包到maven仓库：
-mvn install:install-file -Dfile=E:\propreader-1.0.0.jar -DgroupId=com.github.zhzhair -DartifactId=propreader -Dversion=1.0.0 -Dpackaging=jar
-
-将com文件夹拷贝到maven仓库就可以用了哦(与原来的文件夹合并)！
-
-

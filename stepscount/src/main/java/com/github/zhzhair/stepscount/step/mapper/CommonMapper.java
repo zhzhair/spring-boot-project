@@ -11,7 +11,7 @@ public interface CommonMapper {
 
     void dropTableIfExists(@Param("tableName") String tableName);
 
-    void truncateTableIfExists(@Param("tableName") String tableName);
+    void truncateTable(@Param("tableName") String tableName);
 
     Integer getStepCount(@Param("tableName") String tableName, @Param("userId") Integer userId);
 

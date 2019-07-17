@@ -54,7 +54,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -92,7 +92,7 @@
       <workItem from="1562421901674" duration="1579000" />
       <workItem from="1562497687682" duration="103000" />
       <workItem from="1563370905283" duration="85000" />
-      <workItem from="1563371007523" duration="868000" />
+      <workItem from="1563371007523" duration="1178000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1561675565631</created>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563371175293</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="a">
+      <created>1563371886985</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1563371886985</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

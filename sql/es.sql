@@ -1,4 +1,4 @@
-DROP IF EXISTS `doctor`;
+DROP TABLE IF EXISTS `doctor`;
 CREATE TABLE `doctor` (
   `doctor_id` varchar(10) NOT NULL,
   `doctor_name` varchar(200) NOT NULL DEFAULT '',

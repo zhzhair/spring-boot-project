@@ -17,7 +17,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class FlowstatisticApplication {
 
     public static void main(String[] args) {
-        System.err.println("1".compareTo("2"));
         SpringApplication.run(FlowstatisticApplication.class, args);
     }
 
